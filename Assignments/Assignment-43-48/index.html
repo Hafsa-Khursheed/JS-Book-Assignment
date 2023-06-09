@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+          display: flex;
+        }
+        figure{
+          border: 2px solid lightblue;
+        }
+        img{
+          width: 250px;
+          height: 300px;
+          object-fit: cover;
+        }
+      </style>
+</head>
+<body>
+    Assignment 43-48 
+    <!-- 1. Show an alert box on click on a link. -->
+    <a href="#" onclick="message()">Link</a> 
+
+    <!-- 2. Display some Mobile images in browser. On click on an 
+     image Show the message in alert to user. -->
+        <div>
+        <figure onclick="thankYou()">  
+        <img src="https://mobilepricespakistan.com.pk/wp-content/uploads/2021/12/Iphone-13-425x425.jpg" alt="">
+        <figcaption>iphone</figcaption>
+        </figure>
+        <figure onclick="thankYou()">  
+          <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1677055992779/bd5979b2c8afc4131fa265fcbbe12de8.png" alt="">
+          <figcaption>Vivo V27</figcaption>
+          </figure>
+          <figure onclick="thankYou()">  
+            <img src="https://phonebazar.pk/wp-content/uploads/2022/01/Buy-Infinix-Note-11-Pro-online-540x540.jpg" alt="">
+            <figcaption>Oppo A16</figcaption>
+            </figure>
+          <figure onclick="thankYou()">  
+              <img src="https://i.gadgets360cdn.com/products/large/redmi-note-12-5g-pro-plus-db-gadgets360-800x600-1673019783.jpg" alt="">
+             <figcaption>Redmi</figcaption>
+             </figure>
+            </div>
+    
+            <!-- 3. Display 10 student records in table and each row should contain a delete 
+            button. If you click on a button to delete a record, entire row should be 
+            deleted.   -->
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>Joey</td>
+          <td>10</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>James Smith</td>
+          <td>9</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mike</td>
+          <td>8</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Michel</td>
+          <td>9</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Harry</td>
+          <td>9</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>John</td>
+          <td>9</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Emily</td>
+          <td>9</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Alice</td>
+          <td>10</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Jack</td>
+          <td>9</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Jennifer</td>
+          <td>8</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Robert</td>
+          <td>7</td>
+          <td><button onclick="deleteRecord(this)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 4. Display an image in browser. Change the picture on mouseover and set the 
+    first picture on mouseout.  -->
+    <img src="https://thumbs.dreamstime.com/b/yellow-smiley-face-17437981.jpg"
+     onmouseover="this.src='https://i.pinimg.com/originals/9f/e8/70/9fe87051396c8a4018bde7dac4837937.png'"
+    onmouseout="this.src='https://thumbs.dreamstime.com/b/yellow-smiley-face-17437981.jpg'">
+    
+    <!-- 5. Show a counter in browser. Counter should increase on click on increase 
+    button and decrease on click on decrease button. And show updated counter 
+    value in browser. -->
+    <h1 id="counter">0</h1>
+    <button onclick="increaseCount()">Increase</button>
+    <button onclick="decreaseCount()">Decrease</button>
+    
+
+    <script src="./app.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Assignment 49-52 
+    <!-- // 1. Create a signup form and display form data in your web 
+// page on submission. -->
+<form>
+    <label for="firstName">First Name:</label>
+    <input type="text" name="firstName" id="firstName" required> 
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="lastName" id="lastName" required> 
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+     <button onclick="submission()">Submit</button>
+</form> 
+
+<!-- // 2. Suppose in your webpage there is content area in which 
+// you have entered your item details, but user can only see 
+// some details on first look. When user clicks on “Read 
+// more” button, full detail of that particular item will be 
+// displayed.   -->
+<h2>Read More</h2>
+<p id="myBtn">Lorem ipsum dolor sit amet, consectetur adipiscing elit......</p>
+<button onclick="readMore()" >Read more</button>
+
+    <script src="./app.js">
+    </script>
+</body>
+</html>
